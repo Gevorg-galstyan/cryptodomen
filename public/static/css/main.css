@@ -1,0 +1,2736 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Remove margin
+ */
+figure {
+  margin: 0;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/* Blockquote
+   ========================================================================== */
+blockquote {
+  margin: 0;
+}
+
+/* Your custom fonts here */
+/* Example
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/fonts/Custom-Font.eot');
+    src: url('/fonts/Custom-Font.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Custom-Font.woff') format('woff'),
+         url('/fonts/Custom-Font.svg#custom_font') format('svg');
+    font-weight: 400;       // For normal width. It could has another value
+    font-style: normal;     // Also could has another value
+    }
+
+
+// Var for using custom font
+$CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
+*/
+/*
+	mini reset
+ */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+p, div, nav, header, main, footer, aside, section, ul, ol {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+a, span {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+input, button {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+img {
+  vertical-align: bottom;
+  border: 0;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  outline: none;
+}
+
+*:active, *:focus {
+  outline: none;
+}
+
+input[type="hidden"] {
+  display: none;
+}
+
+.wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: '';
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clear {
+  clear: both;
+  font-size: 1px;
+  line-height: 1px;
+  height: 0;
+  overflow: hidden;
+}
+
+.row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.row [class*="col-"] {
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+}
+
+.row [class*="col-r"] {
+  float: right;
+}
+
+[class*="col-r"] {
+  float: right;
+}
+
+.col-20 {
+  width: 20%;
+}
+
+.hidden {
+  display: none;
+}
+
+.columns-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.columns-wrap .column {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.wrapper_all {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*
+	header
+ */
+.header {
+  background-color: #051228;
+  font-size: 12px;
+  color: white;
+  font-weight: 400;
+  padding: 20px 0 25px;
+  text-transform: uppercase;
+}
+
+.open-menu {
+  display: none;
+}
+
+.main-menu {
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: -8px;
+  margin-right: 23px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-menu li {
+  display: inline-block;
+  position: relative;
+  font-weight: 400;
+  color: #fff;
+  font-size: 12px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.main-menu li:hover {
+  color: #c60156;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.login {
+  position: relative;
+}
+
+.login:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/static/img/content/login.png");
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-top: -3px;
+}
+
+.header .wrapper, .footer .wrapper {
+  padding-left: calc( 4.25% - 10px);
+}
+
+.main .wrapper {
+  padding-left: calc( 4.25% + 10px);
+  padding-right: calc( 4.25% + 10px);
+}
+
+.main .currency_info .wrapper {
+  padding-left: calc( 4.25% - 10px);
+  padding-right: calc( 4.25% - 10px);
+}
+
+.main .currency_chart .wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.main .exchange-tab .wrapper {
+  padding-left: calc( 4.25% - 10px);
+  padding-right: calc( 4.25% - 10px);
+}
+
+.main .about_blockchain .wrapper {
+  padding-left: calc( 4.25% - 10px);
+  padding-right: calc( 4.25% - 40px);
+}
+
+.world_map {
+  background-color: #001e4c;
+  position: relative;
+}
+
+.world_map img {
+  margin: 0 auto;
+  opacity: 0;
+}
+
+#top-image {
+  background: url("/static/img/content/world_map1.png");
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: -25px -50px;
+  background-size: cover;
+}
+
+.descr {
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+
+.descr p + p {
+  margin-top: 21px;
+}
+
+.maintitle {
+  color: #43516e;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 5px;
+}
+
+.about_company {
+  background-color: #eff1f3;
+  color: #43516e;
+  font-size: 14px;
+}
+
+.about_company .col-xs-7 {
+  padding-left: 15px;
+  padding-right: 40px;
+}
+
+.about_company .wrapper_all {
+  padding: 80px 0;
+  background-image: url("/static/img/content/shutterstock_365048564_small.png");
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.about_team {
+  color: #43516e;
+}
+
+.about_team .col-xs-7 {
+  padding-left: 15px;
+  padding-right: 40px;
+}
+
+.about_team .wrapper_all {
+  padding: 60px 0 80px;
+  background-image: url("/static/img/content/b6b3da2.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.about_blockchain {
+  padding: 58px 0 10px;
+  background-color: #001e4c;
+}
+
+.about_blockchain .img {
+  text-align: center;
+  margin-bottom: 15px;
+  height: 85px;
+}
+
+.about_blockchain .text {
+  text-align: center;
+  opacity: 0.5;
+  color: white;
+  font-weight: 300;
+  line-height: 1.7;
+  padding: 0 5%;
+}
+
+.about_blockchain .column {
+  margin: 35px 0 40px;
+}
+
+.about_blockchain .maintitle {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.about_work {
+  color: #43516e;
+  margin-bottom: -1px;
+}
+
+.about_work .col-xs-7 {
+  padding-left: 15px;
+  padding-right: 40px;
+}
+
+.about_work .wrapper_all {
+  padding: 60px 0 112px;
+  background-image: url("/static/img/content/75a9ec3f01f0a11835c725f2bd6a49ce2.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  background-color: #141519;
+  color: rgba(255, 255, 255, 0.34);
+  padding: 30px 0 70px;
+}
+
+.footer-menu {
+  -webkit-column-count: 4;
+          column-count: 4;
+  font-weight: 300;
+  -webkit-column-gap: 70px;
+          column-gap: 70px;
+}
+
+.footer-menu li {
+  padding: 3px 0;
+}
+
+.footer-menu li a {
+  opacity: .5;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  line-height: 1.3;
+}
+
+.footer-menu li a:hover {
+  opacity: 1;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.socials {
+  margin: 10px 0;
+  opacity: .3;
+}
+
+.socials a {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-right: 7px;
+  border-radius: 50%;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.socials a:hover {
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.socials .fb {
+  background-image: url("/static/img/content/fb.png");
+}
+
+.socials .inst {
+  background-image: url("/static/img/content/inst.png");
+}
+
+.socials .yt {
+  background-image: url("/static/img/content/yt.png");
+}
+
+.socials .vk {
+  background-image: url("/static/img/content/vk.png");
+}
+
+.socials .tw {
+  background-image: url("/static/img/content/twitter.png");
+}
+
+.footer .logo {
+  opacity: .3;
+  padding-top: 5px;
+  padding-bottom: 3px;
+}
+
+.ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut,
+.ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut,
+.ct-series-c .ct-bar, .ct-series-c .ct-line, .ct-series-c .ct-point, .ct-series-c .ct-slice-donut,
+.ct-series-d .ct-bar, .ct-series-d .ct-line, .ct-series-d .ct-point, .ct-series-d .ct-slice-donut {
+  stroke: #68748e !important;
+  fill: #b8beca !important;
+}
+
+.ct-label {
+  font-size: 0.45rem !important;
+  color: #68748e !important;
+  font-weight: 700;
+}
+
+.ct-chart-bar, .ct-perfect-fourth {
+  max-height: 250px !important;
+  margin-top: 6px;
+}
+
+.ct-bar {
+  stroke-width: 4px !important;
+}
+
+line.ct-horizontal {
+  stroke-width: 0;
+}
+
+line.ct-grid {
+  stroke-dasharray: 1px;
+}
+
+.ct-perfect-fourth > svg {
+  height: 250px !important;
+  position: relative !important;
+}
+
+.ct-perfect-fourth {
+  height: auto;
+  overflow: hidden;
+}
+
+.tabs .section {
+  display: none;
+  width: 100%;
+}
+
+.tabs input[name='tabs'] {
+  display: none;
+}
+
+.tabs label {
+  display: inline-block;
+  margin: 15px 25px;
+  text-align: left;
+  opacity: 0.65;
+  color: #9aa3b7;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.tabs label:hover {
+  cursor: pointer;
+  color: #133365;
+}
+
+.tabs input:checked + label {
+  color: #133365;
+  opacity: 1;
+  border-bottom: 1px solid;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5,
+#tab6:checked ~ #content6,
+#tab7:checked ~ #content7,
+#tab8:checked ~ #content8,
+#tab9:checked ~ #content9,
+#tab10:checked ~ #content10 {
+  display: block;
+}
+
+.currency_chart {
+  margin-top: 22px;
+  margin-bottom: 18px;
+}
+
+.currency_info {
+  background-color: rgba(228, 228, 255, 0.4);
+  padding: 15px 0;
+  font-size: 12px;
+}
+
+.currency_info .currency {
+  display: inline-block;
+  padding-right: 15px;
+  line-height: 1.3;
+}
+
+.currency_info .currency_name {
+  display: inline-block;
+  font-weight: 700;
+  color: #33558f;
+}
+
+.currency_info .currency_count {
+  display: inline-block;
+  color: #b6bbbe;
+}
+
+.currency_info .currency_dinamic.grow {
+  color: #4da53c;
+}
+
+.currency_info .currency_dinamic.low {
+  color: #ff6939;
+}
+
+.currency_info .currency_dinamic {
+  position: relative;
+  display: inline-block;
+}
+
+.currency_info .currency_dinamic:after {
+  display: inline-block;
+  content: '';
+  margin-left: 3px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+
+.currency_info .currency_dinamic.grow:after {
+  width: 0;
+  height: 0;
+  border-bottom: 9px solid #4da53c;
+}
+
+.currency_info .currency_dinamic.low:after {
+  width: 0;
+  height: 0;
+  border-top: 9px solid #ff6939;
+}
+
+.currency_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.currency_wrap:after {
+  content: "";
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.currency_wrap .currency {
+  -webkit-box-flex: initial;
+      -ms-flex: initial;
+          flex: initial;
+}
+
+.info {
+  padding: 20px 0 70px;
+}
+
+.headtitle {
+  color: #687482;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.7;
+  display: block;
+  letter-spacing: -1px;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.info .descr {
+  color: #b6bbbe;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 10px 0 20px;
+  letter-spacing: -1px;
+}
+
+.info .descr p + p {
+  margin-top: 25px;
+}
+
+.info .diagramm {
+  margin-top: 30px;
+}
+
+.currency_docs {
+  margin-right: 5px;
+  margin-bottom: -16px;
+}
+
+.currency_docs a {
+  float: right;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+a.pdf {
+  background-image: url(/static/img/png-sprite/96dpi/sprite.png);
+  background-position: 0px 0px;
+  width: 61px;
+  height: 54px;
+  background-size: 126px, 54px;
+  background-repeat: no-repeat;
+}
+
+a.xls {
+  background-image: url(/static/img/png-sprite/96dpi/sprite.png);
+  background-position: -65px 0px;
+  width: 61px;
+  height: 54px;
+  background-size: 126px, 54px;
+  background-repeat: no-repeat;
+}
+
+.tabs_content .section {
+  display: none;
+  /* по умолчанию прячем все блоки */
+  padding-right: 25px;
+}
+
+.tabs_content .section.active {
+  display: block;
+  /* по умолчанию показываем нужный блок */
+}
+
+.btn-main {
+  background-image: -webkit-linear-gradient(bottom, #31538c 0%, #4670b5 100%);
+  background-image: linear-gradient(to top, #31538c 0%, #4670b5 100%);
+  border: 1px solid #213f73;
+  border-radius: 3px;
+  height: 39px;
+  color: #fff;
+  box-shadow: inset 0 2px 1px rgba(255, 255, 255, 0.61);
+  padding: 8px 20px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.btn-main:hover {
+  background-image: -webkit-linear-gradient(top, #31538c 0%, #4670b5 100%);
+  background-image: linear-gradient(to bottom, #31538c 0%, #4670b5 100%);
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.btn-transp {
+  border: 1px solid #213f73;
+  border-radius: 3px;
+  height: 39px;
+  color: #213f73;
+  box-shadow: inset 0 2px 1px rgba(255, 255, 255, 0.61);
+  padding: 8px 20px;
+  -webkit-transition: 0.3s linear;
+}
+
+.personal_service > a {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 8px 25px;
+  margin-right: 10px;
+}
+
+.personal_balance {
+  display: inline-block;
+  vertical-align: top;
+  color: #b6bbbe;
+  position: relative;
+  margin-right: 15px;
+}
+
+.personal_balance_menu {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+}
+
+.personal_balance:after {
+  content: '';
+  background-image: url("/static/img/content/arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 14px;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  cursor: pointer;
+}
+
+.exchange-tab {
+  padding: 22px 0 40px;
+}
+
+ul.tabs_menu {
+  clear: left;
+  width: calc( 100% - 200px);
+  padding-right: 37px;
+}
+
+.exchange-tab .tabs_menu > li {
+  background-color: #fcfcfc;
+  border: 1px solid #e1e6e8;
+  cursor: pointer;
+  height: 39px;
+  color: #b6bbbe;
+  font-weight: 700;
+  padding: 8px 15px;
+  margin: 0;
+  float: left;
+  width: 25%;
+  text-align: center;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.exchange-tab .tabs_menu > li:hover {
+  color: #646464;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.exchange-tab .tabs_menu > li.active {
+  background-color: #31538c;
+  color: white;
+  font-weight: 700;
+}
+
+.sent-form, .exchange-form, .request-form {
+  border: 1px solid #d0d0d0;
+}
+
+.sent-form input, .exchange-form input, .request-form input {
+  display: block;
+  width: 100%;
+  height: 39px;
+  background-color: white;
+  border: 1px solid #d0d0d0;
+  padding: 0 10px;
+}
+
+.sent-form textarea, .exchange-form textarea, .request-form textarea {
+  display: block;
+  width: 100%;
+  height: 108px;
+  padding: 10px;
+}
+
+.sent-form label, .exchange-form label, .request-form label {
+  margin: 0;
+}
+
+.sent-form select, .exchange-form select, .request-form select {
+  height: 39px;
+  background-color: white;
+  border: 1px solid #d0d0d0;
+}
+
+.sent-form input::-webkit-input-placeholder, .exchange-form input::-webkit-input-placeholder, .request-form input::-webkit-input-placeholder {
+  color: #b6bbbe;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sent-form input::-moz-placeholder, .exchange-form input::-moz-placeholder, .request-form input::-moz-placeholder {
+  color: #b6bbbe;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sent-form input:-ms-input-placeholder, .exchange-form input:-ms-input-placeholder, .request-form input:-ms-input-placeholder {
+  color: #b6bbbe;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sent-form input:-moz-placeholder, .exchange-form input:-moz-placeholder, .request-form input:-moz-placeholder {
+  color: #b6bbbe;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sent-form textarea::-webkit-input-placeholder, .exchange-form textarea::-webkit-input-placeholder, .request-form textarea::-webkit-input-placeholder {
+  color: #b6bbbe;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sent-form textarea::-moz-placeholder, .exchange-form textarea::-moz-placeholder, .request-form textarea::-moz-placeholder {
+  color: #b6bbbe;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sent-form textarea:-ms-input-placeholder, .exchange-form textarea:-ms-input-placeholder, .request-form textarea:-ms-input-placeholder {
+  color: #b6bbbe;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sent-form textarea:-moz-placeholder, .exchange-form textarea:-moz-placeholder, .request-form textarea:-moz-placeholder {
+  color: #b6bbbe;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sent-form p, .exchange-form p, .request-form p {
+  color: #b6bbbe;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.sent-form .col-3x, .exchange-form .col-3x, .request-form .col-3x {
+  float: left;
+  width: 33.3%;
+}
+
+.sent-form .col-2x, .exchange-form .col-2x, .request-form .col-2x {
+  float: left;
+  width: 50%;
+}
+
+.sent-form .col-xs-5 input, .exchange-form .col-xs-5 input, .request-form .col-xs-5 input {
+  width: calc(100% - 70px);
+  display: inline-block;
+}
+
+.sent-form button, .exchange-form button, .request-form button {
+  width: 118px;
+  height: 39px;
+  color: #fff;
+  background-image: -webkit-linear-gradient(bottom, #31538c 0%, #4670b5 100%);
+  background-image: linear-gradient(to top, #31538c 0%, #4670b5 100%);
+  border: 1px solid #213f73;
+  border-radius: 3px;
+  box-shadow: inset 0 2px 1px rgba(255, 255, 255, 0.61);
+}
+
+.sent-form button:hover, .exchange-form button:hover, .request-form button:hover {
+  background-image: -webkit-linear-gradient(top, #31538c 0%, #4670b5 100%);
+  background-image: linear-gradient(to bottom, #31538c 0%, #4670b5 100%);
+}
+
+#amount_from_input {
+  text-align: right;
+}
+
+#amount_to_input {
+  text-align: right;
+}
+
+#course_exchange {
+  text-align: center;
+}
+
+.sent-form {
+  margin-top: 35px;
+}
+
+.form-head {
+  border-bottom: 1px solid #d0d0d0;
+  padding: 15px 35px;
+}
+
+.form-head .exchange-currency {
+  color: #31538c;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.7;
+  padding-right: 31px;
+  vertical-align: top;
+}
+
+.form-head select {
+  color: #687482;
+  font-size: 25px;
+  font-weight: 400;
+  min-width: 290px;
+  padding: 0 15px;
+  vertical-align: top;
+}
+
+.form-body {
+  padding: 10px 20px;
+}
+
+.sent-form {
+  margin-bottom: 71px;
+}
+
+.sent-form .form-body {
+  padding: 3px 20px;
+}
+
+.sent-form #to_Exchange {
+  margin: 2px 0 10px;
+}
+
+.sent-form .amount {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.sent-form #descriptionExchange {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.amount .col-xs-2 {
+  text-align: center;
+}
+
+.sent-form .commission {
+  margin-top: 6px;
+  margin-bottom: 15px;
+}
+
+.sent-form #commission-exchange {
+  margin-top: 8px;
+}
+
+.sent-form label[for="#toExchange"] {
+  width: 100%;
+}
+
+.sent-form label[for="#toExchange"] #to_Exchange {
+  width: calc( 100% - 75px);
+}
+
+.sent-form label[for="#toExchange"] #selectCode {
+  width: 75px;
+  height: 39px;
+  background-color: white;
+  border: 1px solid #d0d0d0;
+  position: relative;
+}
+
+.sent-form label[for="#toExchange"] #selectCode ul {
+  width: 37px;
+  background-color: white;
+  margin-left: -1px;
+  border: 1px solid #d0d0d0;
+}
+
+.sent-form label[for="#toExchange"] #selectCode li {
+  width: 100%;
+  height: 100%;
+  padding-top: 1px;
+}
+
+.sent-form label[for="#toExchange"] #selectCode:after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 9px solid #d0d0d0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -4px;
+}
+
+.sent-form label[for="#toExchange"] .dropdown-toggle {
+  width: 37px;
+  height: 100%;
+  border-right: 1px solid #d0d0d0;
+  padding-top: 2px;
+}
+
+.request-form {
+  margin-top: 35px;
+  margin-bottom: 63px;
+}
+
+.request-form .address {
+  margin-top: 5px;
+  margin-bottom: 38px;
+}
+
+.request-form .address .btn-main {
+  width: 115px;
+  text-align: center;
+}
+
+.request-form .address input {
+  width: calc( 100% - 115px);
+}
+
+.request-form .address span {
+  color: #345691;
+  font-weight: 400;
+}
+
+.request-form #descriptionExchange {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.request-form .addition-select p {
+  margin-bottom: 19px;
+}
+
+.request-form .addition-select {
+  margin-bottom: 28px;
+}
+
+#change-currency-from-btn, #change-currency-to-btn {
+  padding-left: 20px;
+  color: #4066a8;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.commission select {
+  width: 100%;
+  color: #b6bbbe;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+option.inactive {
+  color: #c4c0c0;
+}
+
+.swap-fields {
+  width: 77px;
+  margin-top: 7px;
+  height: 24px;
+  background-image: url("/static/img/content/swap-fields.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+p.forn-name {
+  width: 100%;
+  min-height: 50px;
+  margin: 0;
+  background-color: #31538c;
+  border: 1px solid #31538c;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 2.2;
+  padding-left: 15%;
+}
+
+.exchange-select {
+  margin-top: 10px;
+  padding: 0 20px;
+}
+
+.exchange-select select {
+  color: #687482;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+
+.exchange-select span {
+  padding-top: 5px;
+  padding-left: 12%;
+  color: #31538c;
+  font-size: 21px;
+  font-weight: 700;
+  width: 40%;
+  float: left;
+}
+
+.exchange-form-head {
+  background-color: #fcfcfc;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.exchange-form .form-body {
+  padding: 17px 20px;
+}
+
+.addition-select select {
+  width: 100%;
+}
+
+.exchange-form button.btn-main {
+  margin-top: 27px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.exchange-form {
+  margin-top: 55px;
+  margin-bottom: 135px;
+  margin-right: 15px;
+}
+
+.wallets ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 33px;
+}
+
+.wallets li {
+  display: inline-block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+.wallets li + li {
+  padding-left: 10px;
+}
+
+.wallet {
+  height: 24px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 700;
+  color: #646464;
+  background-image: -webkit-linear-gradient(bottom, #e6e6e6 0%, #fafafa 100%);
+  background-image: linear-gradient(to top, #e6e6e6 0%, #fafafa 100%);
+  color: #5069a7;
+  padding: 0 5px;
+  border-radius: 3px;
+  box-shadow: inset 0 2px 1px rgba(255, 255, 255, 0.61);
+  padding-top: 3px;
+  text-align: center;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.wallets .active .wallet {
+  background-image: -webkit-linear-gradient(bottom, #81a9ec 0%, #4168aa 100%);
+  background-image: linear-gradient(to top, #81a9ec 0%, #4168aa 100%);
+  color: white;
+  border-radius: 3px;
+  box-shadow: inset 0 2px 1px rgba(255, 255, 255, 0.61);
+}
+
+.wallets p {
+  color: #667483;
+  font-weight: 400;
+  padding: 12px 0 0;
+}
+
+.wallets span {
+  color: #5069a7;
+  font-weight: 400;
+}
+
+.wallet:hover {
+  background-image: -webkit-linear-gradient(bottom, #81a9ec 0%, #4168aa 100%);
+  background-image: linear-gradient(to top, #81a9ec 0%, #4168aa 100%);
+  color: white;
+  border-radius: 3px;
+  box-shadow: inset 0 2px 1px rgba(255, 255, 255, 0.61);
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.wallet:hover a {
+  color: inherit;
+}
+
+.transitions {
+  margin-top: 35px;
+}
+
+.transitions_selection {
+  min-height: 39px;
+  background-color: #e8e8e8;
+  border-radius: 3px;
+  padding: 8px 43px 8px 15px;
+}
+
+.transitions table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.transitions thead {
+  background-color: white;
+  border: 1px solid #d0d0d0;
+  border-radius: 5px 0px 0px;
+  color: #667483;
+  font-weight: 700;
+}
+
+.transitions thead th {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #d0d0d0;
+}
+
+.transitions tbody td {
+  font-weight: 300;
+  color: #667483;
+  border: 1px solid #d0d0d0;
+  background-color: white;
+  padding: 5px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.transitions-type, .transitions-currency {
+  color: #667483;
+  font-weight: 700;
+  margin-left: 15px;
+  margin-right: 3px;
+}
+
+.transitions_selection > span {
+  color: #667483;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.transitions_selection select {
+  width: 87px;
+  height: 25px;
+  background-color: white;
+  border-radius: 3px;
+  border: none;
+  color: #667483;
+  font-weight: 400;
+  padding: 2px 8px;
+}
+
+.transitions_selection option {
+  color: #667483;
+  font-weight: 400;
+}
+
+.more {
+  text-align: center;
+  margin-top: 35px;
+}
+
+#moreTransitions {
+  color: #667483;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.search form {
+  position: relative;
+}
+
+.search input {
+  width: 180px;
+  height: 32px;
+  background-color: white;
+  border: 1px solid #d0d0d0;
+  border-radius: 3px;
+  padding: 0 5px;
+}
+
+.search-btn {
+  background-image: url("/static/img/content/search.png");
+  height: 32px;
+  width: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.wallets_content .content_inner {
+  display: none;
+  /* по умолчанию прячем все блоки */
+}
+
+.wallets_content .content_inner.active {
+  display: block;
+  /* по умолчанию показываем нужный блок */
+}
+
+.wallets_head {
+  height: 57px;
+  padding: 10px 20px;
+  background-color: #f3f2f2;
+  border: 1px solid #d0d0d0;
+  border-bottom-color: transparent;
+  margin-top: 35px;
+}
+
+.wallets_body table, .summ-balance table {
+  width: 100%;
+  border: 1px solid #d0d0d0;
+}
+
+.wallets_body tbody td, .wallets_body thead th, .summ-balance tbody td, .summ-balance thead th {
+  padding: 12px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #929292;
+  background-image: -webkit-linear-gradient(bottom, rgba(220, 220, 220, 0.3) 0%, rgba(220, 220, 220, 0.3) 1%, rgba(249, 249, 249, 0.3) 100%);
+  background-image: linear-gradient(to top, rgba(220, 220, 220, 0.3) 0%, rgba(220, 220, 220, 0.3) 1%, rgba(249, 249, 249, 0.3) 100%);
+  border-bottom: 1px solid rgba(208, 208, 208, 0.3);
+}
+
+.wallets_body tbody td:nth-child(1), .wallets_body thead th:nth-child(1), .summ-balance tbody td:nth-child(1), .summ-balance thead th:nth-child(1) {
+  color: #667483;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 40px;
+  text-transform: none;
+}
+
+.wallets_body tfoot td, .summ-balance tfoot td {
+  padding: 11px 30px 12px;
+}
+
+.wallets_body tfoot td a, .summ-balance tfoot td a {
+  background-color: #667483;
+  border-radius: 3px;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 5px 8px;
+}
+
+.wallets_body thead th, .summ-balance thead th {
+  border-bottom: 1px solid #345792;
+  font-weight: 700;
+  background-image: -webkit-linear-gradient(bottom, #81a9ec 0%, #4168aa 100%);
+  background-image: linear-gradient(to top, #81a9ec 0%, #4168aa 100%);
+  border-top: 1px solid #345792;
+  color: white;
+}
+
+.wallets_body thead th:nth-child(1), .summ-balance thead th:nth-child(1) {
+  color: white;
+}
+
+.wallets_body thead tr, .summ-balance thead tr {
+  border: 1px solid #345792;
+}
+
+.wallets_body thead span, .summ-balance thead span {
+  color: white;
+  font-weight: 700;
+}
+
+.summ-balance {
+  margin-top: 35px;
+}
+
+.summ-balance tbody td {
+  border: 1px solid #fff;
+  padding: 15px 10px;
+  color: #000;
+}
+
+.summ-balance table {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #eaeff7;
+}
+
+.balance-personal {
+  margin: 30px 0;
+  width: 100%;
+}
+
+.balance-personal tr th, .balance-personal tr td {
+  border: 1px solid #d0d0d0;
+  padding: 2px 5px;
+  font-size: 12px;
+  text-align: center;
+  color: #667483;
+  width: 25%;
+}
+
+.balance-personal .btn-main {
+  height: 25px;
+  padding: 2px 8px;
+  margin: 0 3px;
+}
+
+.balance-personal tr th {
+  padding: 5px;
+}
+
+.balance-personal tr th:last-child, .balance-personal tr td:last-child {
+  min-width: 150px;
+}
+
+.balance-personal .availableCurrency {
+  font-weight: 600;
+}
+
+.balance-personal .changelog-percent {
+  position: relative;
+  padding-right: 12px;
+}
+
+.balance-personal .changelog-percent:after {
+  display: inline-block;
+  content: '% ';
+}
+
+.balance-personal .changelog-percent:before {
+  position: absolute;
+  right: 0;
+  font-size: 14px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: '';
+  margin-left: 3px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+
+.balance-personal .changelog-percent.grow {
+  color: #4da53c;
+}
+
+.balance-personal .changelog-percent.less {
+  color: red;
+}
+
+.balance-personal .changelog-percent.less:before {
+  content: '';
+  color: red;
+  width: 0;
+  height: 0;
+  border-top: 9px solid #ff6939;
+}
+
+.balance-personal .changelog-percent.grow:before {
+  content: '';
+  color: #4da53c;
+  width: 0;
+  height: 0;
+  border-bottom: 9px solid #4da53c;
+}
+
+.balance-personal .changelog {
+  font-weight: inherit;
+  white-space: nowrap;
+  color: inherit;
+}
+
+.modals {
+  display: none;
+}
+
+.modals-inner {
+  width: 400px;
+}
+
+.modals-inner {
+  padding: 20px;
+}
+
+.modals-inner label {
+  display: block;
+}
+
+.modals-inner input {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 39px;
+  background-color: white;
+  border: 1px solid #d0d0d0;
+  padding: 0 10px;
+}
+
+.modals-inner .headtitle {
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: none;
+  font-size: 22px;
+}
+
+.modals-inner a {
+  color: #5ebbde;
+}
+
+.modals-inner button {
+  width: 160px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.modals-inner .btn-wrap {
+  text-align: center;
+}
+
+.btn-wrap {
+  text-align: center;
+}
+
+.header {
+  z-index: 3;
+  overflow: visible !important;
+}
+
+.lang-switcher {
+  width: 80px;
+  height: 23px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  z-index: 5;
+  cursor: pointer;
+  position: relative;
+}
+
+.lang-switcher .current-lang {
+  background-color: transparent;
+  text-align: center;
+  line-height: 1.9em;
+  display: block;
+  border-radius: 20px;
+  height: 100%;
+  position: relative;
+}
+
+.lang-switcher .current-lang img {
+  width: 20px;
+  margin-left: 15px;
+  display: inline-block;
+  max-height: 17px;
+  vertical-align: middle;
+}
+
+.lang-switcher .current-lang span {
+  display: inline-block;
+}
+
+.lang-switcher:hover .current-lang {
+  background-color: rgba(255, 255, 255, 0.1);
+  background-clip: content-box;
+}
+
+.lang-switcher .lang-list {
+  height: auto;
+  width: 80px;
+  background-clip: content-box;
+  border-radius: 8px;
+  position: absolute;
+  top: 100%;
+  border-top: 5px solid transparent;
+  z-index: 10;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.lang-switcher .lang-list img {
+  width: 20px;
+  margin-left: 15px;
+  display: inline-block;
+}
+
+.lang-switcher .lang-list span {
+  display: inline-block;
+}
+
+.lang-switcher .lang-list .lang {
+  letter-spacing: 1.4px;
+  text-align: center;
+  color: #000;
+  margin: 3px 0;
+  padding: 5px 5px;
+  border-radius: 8px;
+}
+
+.lang-switcher .lang-list .lang:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.developing {
+  color: red !important;
+  font-size: 20px;
+  margin: 20px 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.developing p, .developing span {
+  color: inherit;
+}
+
+ul.tabs_menu.tabs_menu_side {
+  float: left;
+  width: 30%;
+  padding-right: 0;
+}
+
+.tabs_content_side {
+  float: left;
+  width: 70%;
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+ul.tabs_menu.tabs_menu_side li {
+  display: block;
+  float: none;
+  width: auto;
+  text-align: left;
+  height: auto;
+  min-height: 36px;
+  font-size: 13px;
+}
+
+ul.tabs_menu.tabs_menu_side li {
+  padding: 0;
+}
+
+ul.tabs_menu.tabs_menu_side li a {
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+}
+
+.tabs_content_side {
+  padding-top: 20px;
+}
+
+.tabs_content_side .section {
+  padding: 0 0 30px 30px;
+}
+
+.tabs_content_side .headtitle {
+  margin-bottom: 15px;
+}
+
+.tabs_content_side .btn-main {
+  height: 32px;
+  padding: 5px 20px;
+  font-size: 13px;
+}
+
+.account-info label, .account-info p {
+  color: #5069a7;
+  font-weight: 400;
+  font-size: 13px;
+  margin: 0;
+}
+
+.account-info input {
+  display: block;
+  width: auto;
+  height: 39px;
+  font-size: 13px;
+  background-color: white;
+  border: 1px solid #d0d0d0;
+  padding: 0 10px;
+}
+
+.account-info .row {
+  margin-bottom: 10px;
+}
+
+.account-info .account-status {
+  margin-right: 20px;
+  color: #5069a7;
+  font-size: 13px;
+}
+
+.small-descr {
+  font-size: 11px;
+  color: #5069a7;
+  border: 1px solid #5069a7;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #f7fbfc;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.small-descr p + p {
+  margin-top: 0;
+}
+
+.profile-tab {
+  padding: 60px 0 80px;
+  background-color: rgba(228, 228, 255, 0.4);
+}
+
+.profile-tab .tabs {
+  background: #fff;
+}
+
+/* The switch - the box around the slider */
+.icon-on, .icon-off {
+  color: #5069a7;
+  margin: 0 5px;
+}
+
+.settings {
+  font-size: 12px;
+  margin: 20px 0;
+  margin-left: 10%;
+}
+
+.settings .strong {
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.settings .active {
+  color: #4da53c;
+}
+
+.settings .inactive {
+  color: #ff6939;
+}
+
+.settings .row {
+  margin-bottom: 10px;
+}
+
+.settings input {
+  display: block;
+  width: 100%;
+  height: 39px;
+  background-color: white;
+  border: 1px solid #d0d0d0;
+  padding: 0 10px;
+}
+
+.settings .btn-main {
+  padding: 5px 20px;
+}
+
+.settings-safe .btn-main {
+  padding: 5px 20px;
+  margin-top: 20px;
+}
+
+.settings-verify {
+  margin-left: 20px;
+  margin-top: 0;
+}
+
+.settings-history table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.settings-history table th {
+  border: 1px solid #d0d0d0;
+  padding: 5px 5px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.settings-history table tr td {
+  border: 1px solid #d0d0d0;
+  padding: 5px 5px;
+  font-size: 12px;
+  text-align: center;
+}
+
+#confirmEmail .step2 {
+  display: none;
+}
+
+#confirmPhone .step2 {
+  display: none;
+}
+
+.warning {
+  color: #ff6939;
+  font-size: 13px;
+  display: none;
+  margin-bottom: 5px;
+}
+
+.expanded {
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+}
+
+#NewPassword .step2 {
+  display: none;
+}
+
+.switch-wrap .switch {
+  background-color: #ff6939;
+  border-radius: 4px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 12px;
+  height: 20px;
+  margin-bottom: 12px;
+  position: relative;
+  width: 52px;
+  margin: 0;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.switch-wrap .switch:hover {
+  color: #fff;
+}
+
+.switch.checked {
+  background-color: #4da53c;
+}
+
+.switch input[type="checkbox"] {
+  cursor: pointer;
+  height: 6px;
+  left: 38px;
+  position: absolute;
+  top: 8px;
+  -webkit-transition: left 0.05s ease-in-out;
+  transition: left 0.05s ease-in-out;
+  width: 10px;
+}
+
+.switch.checked input[type="checkbox"] {
+  left: 12px;
+}
+
+.switch input:before {
+  background: #fff;
+  background: -webkit-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+  background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
+  border: 1px solid #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  content: '';
+  height: 14px;
+  position: absolute;
+  top: -5px;
+  left: -9px;
+  width: 18px;
+}
+
+.switch input:after {
+  background: #f0f0f0;
+  background: -webkit-linear-gradient(top, #f0f0f0 0%, #fff 100%);
+  background: linear-gradient(to bottom, #f0f0f0 0%, #fff 100%);
+  border-radius: 10px;
+  content: '';
+  height: 10px;
+  margin: -3px 0 0 -4px;
+  position: absolute;
+  width: 10px;
+}
+
+.switch .icon-ok,
+.switch .icon-remove {
+  line-height: 1.3;
+  text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 7px;
+  padding-top: 2px;
+}
+
+.switch .icon-ok {
+  float: right;
+}
+
+.switch .icon-remove {
+  float: left;
+}
+
+@media (max-width: 980px) {
+  .about_team {
+    background-size: 50%;
+    background-position: center right;
+  }
+  .about_company {
+    background-size: 100%;
+    background-position: center right;
+  }
+  .about_work {
+    background-size: 60% 100%;
+  }
+  .current_balance {
+    text-align: left;
+  }
+  .exchange-select span {
+    padding-left: 0;
+  }
+  .footer-menu {
+    -webkit-column-gap: initial;
+            column-gap: initial;
+  }
+  .balance-personal tr th, .balance-personal tr td {
+    padding: 5px;
+  }
+  .settings {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 780px) {
+  .world_map {
+    min-height: 250px;
+  }
+  #top-image {
+    background-position: top right;
+  }
+  .about_blockchain .column {
+    width: 50%;
+  }
+  .about_company .wrapper_all, .about_team .wrapper_all, .about_work .wrapper_all {
+    padding: 40px 0;
+    background-size: cover;
+  }
+  .about_company .col-xs-7, .about_team .col-xs-7, .about_work .col-xs-7 {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+  }
+  .footer .col-xs-3, .footer .col-xs-9 {
+    width: 100%;
+  }
+  .footer-menu {
+    margin-top: 20px;
+  }
+  .open-menu {
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    float: right;
+    margin-right: 15px;
+  }
+  .open-menu span {
+    border-radius: 8px;
+    background-color: #ffffff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    display: block;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .open-menu span:after, .open-menu span:before {
+    content: '';
+    position: absolute;
+    border-radius: 8px;
+    width: 65px;
+    height: 7px;
+    display: block;
+    background-color: #ffffff;
+  }
+  .open-menu span {
+    width: 100%;
+    height: 3px;
+  }
+  .open-menu span:after, .open-menu span:before {
+    width: 100%;
+    height: 3px;
+  }
+  .open-menu span:before {
+    margin-top: -10px;
+  }
+  .open-menu span:after {
+    margin-top: 10px;
+  }
+  .main-menu {
+    display: block;
+  }
+  .menu-wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 350;
+    padding: 0;
+  }
+  .menu--visible {
+    pointer-events: auto;
+  }
+  .app-menu {
+    position: relative;
+    max-width: 200px;
+    width: 90%;
+    height: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    -webkit-transform: translateX(-103%);
+    transform: translateX(-103%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    will-change: transform;
+    z-index: 160;
+    pointer-events: auto;
+    overflow-x: auto;
+    background-color: #000831;
+  }
+  .menu--visible .app-menu {
+    -webkit-transform: none;
+    transform: none;
+  }
+  .menu--animatable .app-menu {
+    -webkit-transition: all 130ms ease-in;
+    transition: all 130ms ease-in;
+  }
+  .menu--visible.menu--animatable .app-menu {
+    -webkit-transition: all 330ms ease-out;
+    transition: all 330ms ease-out;
+  }
+  .menu-wrap:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    will-change: opacity;
+    pointer-events: none;
+    -webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.3, 1);
+    transition: opacity 0.3s cubic-bezier(0, 0, 0.3, 1);
+  }
+  .menu--visible.menu:after {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .header .main-menu li {
+    display: block;
+    margin: 15px 20px;
+    text-align: left;
+  }
+  .personal_service {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: right;
+  }
+  ul.tabs_menu {
+    width: 100%;
+  }
+  .wallets li + li {
+    padding-left: 5px;
+  }
+  .main .wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .exchange-form-head .col-2x {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .exchange-form .form-body .col-xs-4 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .sent-form .commission > div {
+    width: 100%;
+  }
+  .balance-personal thead {
+    display: none;
+  }
+  .balance-personal tr {
+    display: block;
+    border: 1px solid steelblue;
+  }
+  .balance-personal tr td {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .balance-personal tr td:before {
+    text-align: left;
+    left: 10px;
+    display: inline-block;
+    width: 50%;
+    max-width: 200px;
+    color: steelblue;
+  }
+  .balance-personal tr td:nth-child(1):before {
+    content: 'Валюта ';
+  }
+  .balance-personal tr td:nth-child(2):before {
+    content: '';
+  }
+  .balance-personal tr td:nth-child(3):before {
+    content: 'Баланс (в ед. валюты) ';
+  }
+  .balance-personal tr td:nth-child(4):before {
+    content: 'Курс к основной валюте';
+  }
+  .balance-personal tr td:nth-child(5):before {
+    content: '% изменения ';
+  }
+  .balance-personal tr td:nth-child(6):before {
+    content: 'Pending Deposit';
+  }
+  .balance-personal tr td:nth-child(7):before {
+    content: 'YOUR BALANCE (в основной валюте)';
+  }
+  .transitions-type, .transitions-currency {
+    margin-top: 5px;
+  }
+  ul.tabs_menu.tabs_menu_side, .tabs_content_side {
+    width: 100%;
+  }
+  .tabs_content_side {
+    margin-top: 35px;
+  }
+  .main .exchange-tab .wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    min-height: .01%;
+    overflow-x: auto;
+  }
+  .tabs_content_side .section {
+    padding: 0 10px 30px 10px;
+  }
+}
+
+@media (max-width: 580px) {
+  .footer-menu {
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
+  .wallets li {
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
+    width: 33.3%;
+    margin-bottom: 15px;
+  }
+  .transitions_selection > span {
+    display: block;
+    text-align: center;
+  }
+  .transitions_selection {
+    text-align: center;
+  }
+  .transitions_selection .col-r {
+    float: none;
+    display: inline-block;
+  }
+  .exchange-tab .tabs_menu > li {
+    padding: 8px 0;
+  }
+  .sent-form label.col-xs-5, .sent-form .col-xs-2 {
+    width: 100%;
+    text-align: center;
+  }
+  .swap-fields {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    height: 50px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-position: 150% center;
+    margin-right: 8px;
+  }
+  ul.tabs_menu {
+    padding-right: 0;
+  }
+  .tabs_content .section {
+    padding-right: 0;
+  }
+  .request-form label.col-xs-5, .request-form .col-xs-2 {
+    width: 100%;
+    text-align: center;
+  }
+  .request-form .addition-select .col-xs-4, .request-form .addition-select .col-xs-3 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .request-form .address span {
+    margin-top: 4px;
+  }
+  .header .col-xs-5 {
+    min-width: 150px;
+    width: auto;
+    display: inline-block;
+  }
+  .header .col-xs-7 {
+    float: none;
+  }
+  .tabs_content_side .col-xs-4, .tabs_content_side .col-xs-6, .tabs_content_side .col-xs-8 {
+    width: 100%;
+    text-align: center;
+  }
+  .tabs_content_side .account-info input {
+    width: auto;
+    display: inline-block;
+    margin: 5px 0;
+  }
+  ul.tabs_menu.tabs_menu_side li {
+    padding: 5px 15px;
+  }
+  .settings-history .col-r {
+    float: none;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 430px) {
+  .footer-menu {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+  .currency_info .currency {
+    padding-right: 5px;
+    font-size: 11px;
+  }
+  .currency_info .currency_name {
+    font-weight: 600;
+  }
+  .open-menu {
+    width: 30px;
+  }
+  .wallets_body tbody td {
+    padding: 15px 5px;
+    width: inherit;
+  }
+  .wallets_body tbody td:nth-child(1) {
+    padding-left: 10px;
+  }
+  .form-head select {
+    min-width: auto;
+    width: 100%;
+  }
+  .personal_service > a {
+    padding: 8px 15px;
+  }
+  .modals-inner {
+    max-width: 95%;
+    width: 95%;
+  }
+}

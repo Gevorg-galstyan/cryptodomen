@@ -1,0 +1,17 @@
+.own__alert{
+    position: fixed;
+    top: 25%;
+    max-width: 40%;
+    white-space: pre-wrap;
+    left: 50%;
+    word-wrap: break-word;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: 999;
+}
+.intl-tel-input{
+    width: 100% !important;
+}
